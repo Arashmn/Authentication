@@ -19,10 +19,6 @@
         @endguest
 
         @auth
-            {{-- <div class="text-center m-5 h1 fw-bold">
-                @lang('public.Welcome Mr') {{ Auth::user()?->name }}
-            </div> --}}
-   
             <x-profile :user="Auth::user()"></x-profile>
         @endauth
 

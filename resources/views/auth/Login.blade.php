@@ -9,9 +9,9 @@
                         class="img-fluid" alt="Sample image">
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  text-end    ">
-                    <form action="{{ route('auth.login.store') }}" method="post">
+                    <form  autocomplete="off" action="{{ route('auth.login.store') }}" method="post">
                         @csrf
-                        
+                        <x-alert></x-alert>
                         <x-validation />
                         <!-- Email input -->
                         <div class="form-outline mb-4 ">
@@ -36,7 +36,7 @@
                                     @lang('auth.Remember me')
                                 </label>
                             </div>
-                            <a href="#!" class="text-body"> @lang('auth.Forgot password?')</a>
+                            <a href="{{ route('auth.forget') }}" class="text-body"> @lang('auth.Forgot password?')</a>
                         </div>
 
                         <div class="text-center text-lg-start mt-4 pt-2 text-end">

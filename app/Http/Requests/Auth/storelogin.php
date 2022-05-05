@@ -28,9 +28,9 @@ class storelogin extends storeRegister
 
     public function authenticate()
     {
-        // $this->ensureIsNotRateLimited();
-        if (!Auth::attempt($this->only('email', 'password'))) {
-            // RateLimiter::hit($this->throttleKey());
+        $this->ensureIsNotRateLimited();
+        if (!Auth::attempt($this->only('email', 'password'),true)) {
+            RateLimiter::hit($this->throttleKey());
             return redirect()->route('auth.login')->with('failed', __('public.username or password failed'));
             // return redirect()->back()->withErrors('failed', __('public.username or password failed'));
         }

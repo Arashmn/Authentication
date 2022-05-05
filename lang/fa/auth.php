@@ -17,6 +17,9 @@ return [
     'mobile'=>'شماره موبایل',
     'Repeat your password'=>'تکرار رمز عبور',
     'Do you have an account?'=>'آیا اکانت دارید؟',
+    'Full Name'=>'نام کامل',
+    'Email'=>'ایمیل',
+    'Mobile'=>'موبایل',
    
     
 ];

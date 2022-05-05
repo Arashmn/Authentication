@@ -18,8 +18,7 @@ class LogginController extends Controller
     {
         $request->authenticate();
         $request->session()->regenerate();
-      //  return redirect()->back() ;
-      
+        return redirect()->intended() ;
     }
 
     public function destory(Request $request)
