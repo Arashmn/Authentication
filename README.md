@@ -15,7 +15,7 @@ Laravel task manager is a open source project about Authentication.
 
 ## Description
 
-This project created by laravel , Boostrap 5 
+This project created by php 8 , laravel 9 , Boostrap 5 
 
 Enjoy it :)
 
